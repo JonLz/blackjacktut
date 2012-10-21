@@ -11,3 +11,108 @@
  *= require_self
  *= require_tree .
  */
+
+@import "bootstrap";
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+#login_form {
+  width: 650px;
+  margin: auto;
+}
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  padding: 10px;
+  height: auto;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+#error_explanation {
+  color:#f00;
+  ul {
+    list-style: none;
+    margin: 0 0 18px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .control-group;
+  @extend .error;
+ }
+
+#mainbox {
+  width: 600px;
+  height: 500px;
+  margin: auto;
+  text-align: center;
+  background-image: url(/assets/test.png);
+}
+#result {
+  width: 400px;
+  min-height: 51px;
+  margin: auto;
+  text-align: center;
+}
+#player {
+  padding: 50px 0px 0px 0px;
+  width: 400px;
+  height: 120px;
+  margin: auto;
+  text-align: center;
+  color: yellow;
+}
+#player label {
+  color: #FFC90E;
+}
+#spacer {
+  min-height: 40px ;
+}
+#spacer h1 {
+  color: #FFC90E;
+}
+#dealer {
+  width: 400px;
+  height: 150px;
+  margin: auto;
+  text-align: center;
+}
+#dscore {
+  min-height: 27px;
+}
+#dscore label {
+  color: #FFC90E;
+}
+#buttons {
+  padding: 10px 0px 0px 0px;
+  width: 400px;
+  height: 80px;
+  margin: auto;
+  text-align: center;
+}
