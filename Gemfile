@@ -10,7 +10,7 @@ gem 'rspec-rails', '2.9.0'
 gem 'guard-rspec'
 gem 'guard-livereload'
 gem 'guard-spork'
-gem 'wdm', '~> 0.0.3'
+#gem 'wdm', '~> 0.0.3'  removed for now as it seems to be killing the server intermittently -.-
 gem 'spork', '0.9.2'
 
 end
