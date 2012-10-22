@@ -7,6 +7,12 @@ gem 'bcrypt-ruby', '3.0.1'
 group :development, :test do
 gem 'sqlite3', '1.3.5'
 gem 'rspec-rails', '2.9.0'
+gem 'guard-rspec'
+gem 'guard-livereload'
+gem 'guard-spork'
+gem 'wdm', '~> 0.0.3'
+gem 'spork', '0.9.2'
+
 end
 
 group :assets do
