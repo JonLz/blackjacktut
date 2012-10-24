@@ -1,8 +1,9 @@
 BlackjackTut::Application.routes.draw do
   get "users/new"
  
-  resources :users
-  root :to => 'users#new'
+  resources :users, :sessions
+  root :to => 'sessions#new'
+  match '/login', to: 'sessions#new'
   match '/signup',  to: 'users#new'
   
   # The priority is based upon order of creation:
