@@ -18,6 +18,7 @@ describe "UserLogins" do
       it { should have_selector('h1', text: 'Sign in') }
       it { should have_selector('div.alert.alert-error', text: 'Invalid') }
     end
+    
      describe "with valid information" do
       let(:user) { FactoryGirl.create(:user) }
       before do
