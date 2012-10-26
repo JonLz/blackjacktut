@@ -9,7 +9,7 @@ class Card
 
 	def self.shuffle
   	@@pos = 0
-  	@@deck.sort_by { rand }
+  	@@deck = @@deck.sort_by { rand }
   end
 
 	def initialize
